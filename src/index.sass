@@ -1,0 +1,49 @@
+body
+    min-height: 100vh
+    margin-bottom: 50px
+    background: #44A08D  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #093637, #44A08D);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #093637, #44A08D) /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+.lyric-inputs
+    margin-top: 50px
+    display: flex
+    justify-content: center
+    @media(max-width:767px)
+        flex-direction: column
+        align-items: center
+        justify-content: initial
+        #songName
+            margin: 20px 0px
+    button
+        background-color: #419a88
+        border: 1px solid white
+        border-radius: 4px
+        color: white
+        @media(max-width:767px)
+            width: 210px
+            height: 40px
+        &:hover
+            cursor: pointer
+    #artistName
+    #songName
+    .MuiInputBase-root
+    .MuiOutlinedInput-notchedOutline
+        border-color: white
+    input
+        display: block
+        margin: auto
+        color: white
+        border: none
+        box-shadow: none
+        background: none
+    label
+        color: white
+.lyrics
+    margin-top: 50px
+    p
+        color: white
+        width: 60%
+        margin: 0 auto
+        @media(max-width:767px)
+            width: 90%
